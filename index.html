@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Censo Poblacional - Proyecto Ruta del Sol Sector II</title>
+    
+    <!-- Your platform (jquery) scripts. -->
+    <script src="https://unpkg.com/jquery"></script>
+        <script src="https://surveyjs.azureedge.net/1.0.14/survey.jquery.js"></script>
+        <link href="https://surveyjs.azureedge.net/1.0.14/survey.css" type="text/css" rel="stylesheet"/>
+    
+</head>
+<body>
+    
+    <div id="surveyContainer"></div>    
+
+    <script>
+        
+        var surveyJSON = {locale:"es",title:{default:"CENSO POBLACIONAL\nProyecto Ruta del Sol - Sector II",es:"FICHA SOCIAL DE INMUEBLES Y UNIDADES SOCIALES"},pages:[{name:"Identificacion",elements:[{type:"text",name:"codigo_identificacion",title:{es:"Código N°"},isRequired:true,inputType:"number",placeHolder:{es:"Digite el codigo de identificación"}},{type:"text",name:"total_unidades_sociales",title:{es:"Total de US"},isRequired:true,inputType:"number",placeHolder:{es:"Digite el numero de unidades sociales"}}],title:{es:"Datos de Identificación"}}],showPageNumbers:true,showProgressBar:"bottom",firstPageIsStarted:true}
+
+        function sendDataToServer(survey) {
+            //send Ajax request to your web server.
+            alert("The results are:" + JSON.stringify(survey.data));
+        }
+
+        var survey = new Survey.Model(surveyJSON);
+        $("#surveyContainer").Survey({
+            model: survey,
+            onComplete: sendDataToServer
+        });
+    </script>
+
+</body>
+</html>

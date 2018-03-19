@@ -1,0 +1,1642 @@
+{
+ locale: "es",
+ title: {
+  default: "CENSO POBLACIONAL\nProyecto Ruta del Sol - Sector II",
+  es: "FICHA SOCIAL DE INMUEBLES Y UNIDADES SOCIALES"
+ },
+ pages: [
+  {
+   name: "Identificacion",
+   elements: [
+    {
+     type: "panel",
+     name: "panel1",
+     elements: [
+      {
+       type: "text",
+       name: "codigo_identificacion",
+       startWithNewLine: false,
+       title: {
+        es: "Código N°"
+       },
+       isRequired: true,
+       inputType: "number",
+       placeHolder: {
+        es: "Digite el codigo de identificación"
+       }
+      },
+      {
+       type: "text",
+       name: "total_unidades_sociales",
+       startWithNewLine: false,
+       title: {
+        es: "Total de US"
+       },
+       isRequired: true,
+       inputType: "number",
+       placeHolder: {
+        es: "Digite el numero de unidades sociales"
+       }
+      },
+      {
+       type: "text",
+       name: "numero_unidad_social",
+       startWithNewLine: false,
+       title: {
+        es: "US N°"
+       },
+       inputType: "number",
+       placeHolder: {
+        es: "Digite num. de US"
+       }
+      },
+      {
+       type: "text",
+       name: "nombre_centro_poblado",
+       title: {
+        es: "Nombre del Centro poblado"
+       },
+       isRequired: true,
+       placeHolder: {
+        es: "Escriba el nombre del centro poblado"
+       }
+      },
+      {
+       type: "dropdown",
+       name: "question1",
+       startWithNewLine: false,
+       title: {
+        es: "Municio"
+       },
+       isRequired: true,
+       choices: [
+        "Aguada",
+        "Albania",
+        "Aratoca",
+        "Barbosa",
+        "Barichara",
+        "Barrancabermeja",
+        "Betulia",
+        "Bolívar",
+        "Bucaramanga",
+        "Cabrera",
+        "California",
+        "Capitanejo",
+        "Carcasí",
+        "Cepitá",
+        "Cerrito",
+        "Charalá",
+        "Charta",
+        "Chima",
+        "Chipatá",
+        "Cimitarra",
+        "Concepción",
+        "Confines",
+        "Contratación",
+        "Coromoro",
+        "Curití",
+        "El Carmen de Chucurí",
+        "El Guacamayo",
+        "El Peñón",
+        "El Playón",
+        "Encino",
+        "Enciso",
+        "Florián",
+        "Floridablanca",
+        "Galán",
+        "Gámbita",
+        "Girón",
+        "Guaca",
+        "Guadalupe",
+        "Guapotá",
+        "Guavatá",
+        "Güepsa",
+        "Hato",
+        "Jesús María",
+        "Jordán",
+        "La Belleza",
+        "La Paz",
+        "Landázuri",
+        "Lebrija",
+        "Los Santos",
+        "Macaravita",
+        "Málaga",
+        "Matanza",
+        "Mogotes",
+        "Molagavita",
+        "Ocamonte",
+        "Oiba",
+        "Onzaga",
+        "Palmar",
+        "Palmas del Socorro",
+        "Páramo",
+        "Piedecuesta",
+        "Pinchote",
+        "Puente Nacional",
+        "Puerto Parra",
+        "Puerto Wilches",
+        "Rionegro",
+        "Sabana de Torres",
+        "San Andrés",
+        "San Benito",
+        "San Gil",
+        "San Joaquín",
+        "San José de Miranda",
+        "San Miguel",
+        "San Vicente de Chucurí",
+        "Santa Bárbara",
+        "Santa Helena del Opón",
+        "Simacota",
+        "Socorro",
+        "Suaita",
+        "Sucre",
+        "Suratá",
+        "Tona",
+        "Valle de San José",
+        "Vélez",
+        "Vetas",
+        "Villanueva",
+        "Zapatoca"
+       ]
+      },
+      {
+       type: "text",
+       name: "direccion_predio",
+       title: {
+        es: "Dirección del Predio"
+       },
+       isRequired: true,
+       placeHolder: {
+        es: "Escriba la direccíon del predio"
+       }
+      },
+      {
+       type: "text",
+       name: "encuestador",
+       title: {
+        es: "Nombre del Encuestador"
+       },
+       isRequired: true,
+       placeHolder: {
+        es: "Escriba el nombre del Encuestador"
+       }
+      },
+      {
+       type: "text",
+       name: "fecha",
+       startWithNewLine: false,
+       title: {
+        es: "Fecha"
+       },
+       isRequired: true,
+       inputType: "date"
+      }
+     ]
+    },
+    {
+     type: "panel",
+     name: "identificacion_propietario",
+     elements: [
+      {
+       type: "text",
+       name: "propietario",
+       title: {
+        es: "Nombre del Propietario"
+       },
+       isRequired: true,
+       placeHolder: {
+        es: "Escriba el nombre del propietario"
+       }
+      },
+      {
+       type: "radiogroup",
+       name: "residente",
+       startWithNewLine: false,
+       title: {
+        es: "Residente"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "si",
+         text: {
+          es: "Si"
+         }
+        },
+        {
+         value: "no",
+         text: {
+          es: "No"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "direccion_propietario",
+       title: {
+        es: "Dirección del Propietario - Misma del Predio?"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "si",
+         text: {
+          es: "Si"
+         }
+        },
+        {
+         value: "no",
+         text: {
+          es: "No"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "text",
+       name: "otra_direccion_propietario",
+       startWithNewLine: false,
+       title: {
+        es: "Otra dirección"
+       },
+       isRequired: true,
+       placeHolder: {
+        es: "Escriba la otra dirección del propietario"
+       }
+      },
+      {
+       type: "text",
+       name: "contacto_propietario",
+       title: {
+        es: "Número de Contacto"
+       },
+       isRequired: true,
+       inputType: "tel",
+       placeHolder: {
+        es: "Digite numero de telefono del propietario"
+       }
+      }
+     ],
+     title: {
+      es: "Identificación del Propietario"
+     }
+    },
+    {
+     type: "panel",
+     name: "caracteristicas_predio",
+     elements: [
+      {
+       type: "radiogroup",
+       name: "tipo_inmueble",
+       title: {
+        es: "Tipo de Inmueble"
+       },
+       isRequired: true,
+       hasOther: true,
+       choices: [
+        {
+         value: "apartamento",
+         text: {
+          es: "Apartamento"
+         }
+        },
+        {
+         value: "bodega",
+         text: {
+          es: "Bodega"
+         }
+        },
+        {
+         value: "lote",
+         text: {
+          es: "Lote"
+         }
+        },
+        {
+         value: "casa",
+         text: {
+          es: "Casa"
+         }
+        }
+       ],
+       choicesOrder: "asc",
+       otherText: {
+        es: "Otra:"
+       },
+       colCount: 4
+      },
+      {
+       type: "text",
+       name: "area_lote",
+       title: {
+        es: "Area del Lote"
+       },
+       inputType: "number",
+       placeHolder: {
+        es: "Digite area del lote"
+       }
+      },
+      {
+       type: "text",
+       name: "area_construida",
+       startWithNewLine: false,
+       title: {
+        es: "Area construida"
+       },
+       isRequired: true,
+       inputType: "number",
+       placeHolder: {
+        es: "Digite area de lote construida"
+       }
+      },
+      {
+       type: "html",
+       name: "serviciospublicos_text",
+       html: {
+        es: "<p><i>Servicios Públicos con los que cuenta el predio:</i></p>"
+       }
+      },
+      {
+       type: "radiogroup",
+       name: "acueducto",
+       title: {
+        es: "Acueducto"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "r",
+         text: {
+          es: "R"
+         }
+        },
+        {
+         value: "i",
+         text: {
+          es: "I"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "alcantarillado",
+       startWithNewLine: false,
+       title: {
+        es: "Alcantarillado"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "r",
+         text: {
+          es: "R"
+         }
+        },
+        {
+         value: "i",
+         text: {
+          es: "I"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "energia",
+       title: {
+        es: "Energia Electrica"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "r",
+         text: {
+          es: "R"
+         }
+        },
+        {
+         value: "i",
+         text: {
+          es: "I"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "telefonia",
+       startWithNewLine: false,
+       title: {
+        es: "Telefonía"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "r",
+         text: {
+          es: "R"
+         }
+        },
+        {
+         value: "i",
+         text: {
+          es: "I"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "gas",
+       title: {
+        es: "Gas"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "r",
+         text: {
+          es: "R"
+         }
+        },
+        {
+         value: "i",
+         text: {
+          es: "I"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "otro_servicio",
+       startWithNewLine: false,
+       title: {
+        es: "Otro"
+       },
+       choices: [
+        {
+         value: "r",
+         text: {
+          es: "R"
+         }
+        },
+        {
+         value: "i",
+         text: {
+          es: "I"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "acabados_construccion",
+       title: {
+        es: "Acabados en la construcción"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "si_acabados",
+         text: {
+          es: "Con Acabados"
+         }
+        },
+        {
+         value: "no_acabados",
+         text: {
+          es: "Sin Acabados"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "estado_inmueble",
+       title: {
+        es: "Estado del Inmueble"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "bueno",
+         text: {
+          es: "Bueno"
+         }
+        },
+        {
+         value: "regular",
+         text: {
+          es: "Regular"
+         }
+        },
+        {
+         value: "malo",
+         text: {
+          es: "Malo"
+         }
+        }
+       ],
+       colCount: 3
+      },
+      {
+       type: "html",
+       name: "distribucion_inmueble",
+       html: {
+        es: "<p><i>Distribución del Inmueble: </i></p>"
+       }
+      },
+      {
+       type: "text",
+       name: "num_pisos",
+       title: {
+        es: "N° Pisos"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_alcobas",
+       startWithNewLine: false,
+       title: {
+        es: "N° Alcobas"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_baños",
+       startWithNewLine: false,
+       title: {
+        es: "N° Baños"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_patios",
+       startWithNewLine: false,
+       title: {
+        es: "N° Patios"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_salas",
+       startWithNewLine: false,
+       title: {
+        es: "N° Salas"
+       }
+      },
+      {
+       type: "text",
+       name: "num_cocinas",
+       title: {
+        es: "N° Cocinas"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_locales",
+       startWithNewLine: false,
+       title: {
+        es: "N° Locales"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_comedores",
+       startWithNewLine: false,
+       title: {
+        es: "N° Comedores"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_bodegas",
+       startWithNewLine: false,
+       title: {
+        es: "N° Bodegas"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "otra_distribucion_inmueble",
+       startWithNewLine: false,
+       title: {
+        es: "Otros"
+       }
+      },
+      {
+       type: "checkbox",
+       name: "material_predom_inmueble",
+       title: {
+        es: "Material Predominante (Muros) en el Inmueble"
+       },
+       choices: [
+        {
+         value: "ladrillo",
+         text: {
+          es: "Ladrillo / Bloque"
+         }
+        },
+        {
+         value: "no_perdurable",
+         text: {
+          es: "No Perdurable"
+         }
+        },
+        {
+         value: "prefabricada",
+         text: {
+          es: "Prefabricada"
+         }
+        },
+        {
+         value: "madera",
+         text: {
+          es: "Madera"
+         }
+        }
+       ],
+       colCount: 4
+      }
+     ],
+     title: {
+      es: "Caracteristicas Físicas del Predio - Inventario"
+     }
+    }
+   ],
+   title: {
+    es: "Datos de Identificacion"
+   }
+  },
+  {
+   name: "info_unidad_social",
+   elements: [
+    {
+     type: "panel",
+     name: "panel2",
+     elements: [
+      {
+       type: "text",
+       name: "num_us_enpredio",
+       title: {
+        es: "N° de US que habitan el predio"
+       },
+       isRequired: true,
+       inputType: "number",
+       placeHolder: {
+        es: "Digite el numero de US que habitan el predio"
+       }
+      },
+      {
+       type: "radiogroup",
+       name: "USpropietaria_residente",
+       startWithNewLine: false,
+       title: {
+        es: "La US propietaria es residente"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "si",
+         text: {
+          es: "Si"
+         }
+        },
+        {
+         value: "no",
+         text: {
+          es: "No"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "tenencia_uspropietaria",
+       title: {
+        es: "Tenencia de la US Propietaria"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "titulo",
+         text: {
+          es: "Titulo"
+         }
+        },
+        {
+         value: "mejorataria",
+         text: {
+          es: "Mejorataria"
+         }
+        },
+        {
+         value: "arriendataria",
+         text: {
+          es: "Arriendataria"
+         }
+        },
+        {
+         value: "usp",
+         text: {
+          es: "USP"
+         }
+        }
+       ],
+       colCount: 4
+      },
+      {
+       type: "radiogroup",
+       name: "otras_us_enpredio",
+       title: {
+        es: "Otras US en el predio"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "productivas",
+         text: {
+          es: "Productivas"
+         }
+        },
+        {
+         value: "moradoras",
+         text: {
+          es: "Moradoras"
+         }
+        }
+       ],
+       colCount: 2
+      }
+     ]
+    },
+    {
+     type: "panel",
+     name: "info_anexo1",
+     elements: [
+      {
+       type: "text",
+       name: "responsable_us",
+       title: {
+        es: "Responsable de la US"
+       },
+       isRequired: true,
+       placeHolder: {
+        es: "Escriba el nombre del responsable de la US"
+       }
+      },
+      {
+       type: "text",
+       name: "cedula_responsable",
+       startWithNewLine: false,
+       title: {
+        es: "N° de Cedula"
+       },
+       isRequired: true,
+       inputType: "number",
+       placeHolder: {
+        es: "Digite número de cedula del responsable"
+       }
+      },
+      {
+       type: "radiogroup",
+       name: "genero",
+       title: {
+        es: "Género"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "masculino",
+         text: {
+          es: "Masculino"
+         }
+        },
+        {
+         value: "femenino",
+         text: {
+          es: "Femenino"
+         }
+        },
+        {
+         value: "otro_genero",
+         text: {
+          es: "Otro"
+         }
+        }
+       ]
+      },
+      {
+       type: "radiogroup",
+       name: "uso_inmueble",
+       startWithNewLine: false,
+       title: {
+        es: "Uso del Inmueble"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "vivienda",
+         text: {
+          es: "Vivienda"
+         }
+        },
+        {
+         value: "comercio",
+         text: {
+          es: "Comercio"
+         }
+        },
+        {
+         value: "industria",
+         text: {
+          es: "Industria"
+         }
+        },
+        {
+         value: "institucional",
+         text: {
+          es: "Institucional"
+         }
+        }
+       ],
+       colCount: 4
+      },
+      {
+       type: "radiogroup",
+       name: "integranteUS_otro_inmueble",
+       title: {
+        es: "Algún integrante de la US cuenta con otro inmueble (vivienda, lote)"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "si",
+         text: {
+          es: "Si"
+         }
+        },
+        {
+         value: "no",
+         text: {
+          es: "No"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "text",
+       name: "num_personas_uspropietaria",
+       title: {
+        es: "N° de personas de la US propietaria"
+       },
+       isRequired: true,
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_adultos",
+       startWithNewLine: false,
+       title: {
+        es: "N° de Adultos"
+       },
+       isRequired: true,
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_niños",
+       startWithNewLine: false,
+       title: {
+        es: "N° de Niños"
+       },
+       isRequired: true,
+       inputType: "number"
+      }
+     ],
+     title: {
+      es: "Diligencie informacion unicamente para US propietaria o mejoratorias residente"
+     }
+    },
+    {
+     type: "panel",
+     name: "info_encuestado_unidadsocial",
+     elements: [
+      {
+       type: "html",
+       name: "question2",
+       html: {
+        es: "<p>Información del Encuestado/a (por unidad social)</p>"
+       }
+      },
+      {
+       type: "text",
+       name: "nombre_encuestado",
+       title: {
+        es: "Nombre del Encuestado"
+       },
+       isRequired: true
+      },
+      {
+       type: "text",
+       name: "cedula_encuestado",
+       startWithNewLine: false,
+       title: {
+        es: "N° de Cédula"
+       },
+       isRequired: true,
+       inputType: "number"
+      },
+      {
+       type: "radiogroup",
+       name: "relacion_encuestado_propietario",
+       title: {
+        es: "Relación del encuestado con el propietario de la US"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "conyuge",
+         text: {
+          es: "Conyuge"
+         }
+        },
+        {
+         value: "padre",
+         text: {
+          es: "Padre"
+         }
+        },
+        {
+         value: "hijo",
+         text: {
+          es: "Hijo"
+         }
+        },
+        {
+         value: "otra_relacion",
+         text: {
+          es: "Otra"
+         }
+        }
+       ],
+       colCount: 4
+      }
+     ]
+    },
+    {
+     type: "panel",
+     name: "caracter_socio_economicas",
+     elements: [
+      {
+       type: "html",
+       name: "caracteristicas_socio_economicas",
+       html: {
+        es: "<p>Caracteristicas Socio Económicas (por Unidad Social)</p> "
+       }
+      },
+      {
+       type: "radiogroup",
+       name: "responsabilidad_economica",
+       title: {
+        es: "La responsabilidad económica es"
+       },
+       choices: [
+        {
+         value: "responsableUS",
+         text: {
+          es: "Responsable US"
+         }
+        },
+        {
+         value: "compartida",
+         text: {
+          es: "Compartida"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "text",
+       name: "num_personas_ingresos",
+       startWithNewLine: false,
+       title: {
+        es: "N° de personas con ingresos"
+       },
+       isRequired: true,
+       inputType: "number"
+      },
+      {
+       type: "radiogroup",
+       name: "ingresos_mensuales_totales",
+       title: {
+        es: "Ingresos Mensuales Totales de la US"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "salario1",
+         text: {
+          es: "Menos de 1SMMLV"
+         }
+        },
+        {
+         value: "salario2",
+         text: {
+          es: "Entre 1 y 2 "
+         }
+        },
+        {
+         value: "salario3",
+         text: {
+          es: "Entre 2 y 3"
+         }
+        },
+        {
+         value: "salario4",
+         text: {
+          es: "Mas de 4"
+         }
+        }
+       ],
+       colCount: 4
+      },
+      {
+       type: "radiogroup",
+       name: "gastos_mensuales_totales",
+       title: {
+        es: "Gastos mensuales totales de la US"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "gasto1",
+         text: {
+          es: "Menos de 1SMMLV"
+         }
+        },
+        {
+         value: "gasto2",
+         text: {
+          es: "Entre 1 y 2"
+         }
+        },
+        {
+         value: "gasto3",
+         text: {
+          es: "Entre 2 y 3"
+         }
+        },
+        {
+         value: "gasto4",
+         text: {
+          es: "Mas de 4"
+         }
+        }
+       ],
+       colCount: 4
+      },
+      {
+       type: "radiogroup",
+       name: "ocupacion_mayor_aportante",
+       title: {
+        es: "Ocupación del mayor aportante de la US"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "empleado",
+         text: {
+          es: "Empleado"
+         }
+        },
+        {
+         value: "independiente",
+         text: {
+          es: "Independiente"
+         }
+        },
+        {
+         value: "otra_ocupacion",
+         text: {
+          es: "Otra"
+         }
+        }
+       ],
+       colCount: 3
+      },
+      {
+       type: "radiogroup",
+       name: "nivel_educativo",
+       title: {
+        es: "Nivel Educativo"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "sin_estudio",
+         text: {
+          es: "Sin estudios"
+         }
+        },
+        {
+         value: "primaria_completa",
+         text: {
+          es: "Primaria Completa"
+         }
+        },
+        {
+         value: "primaria_incompleta",
+         text: {
+          es: "Primaria Incompleta"
+         }
+        },
+        {
+         value: "secundaria_completa",
+         text: {
+          es: "Secundaria Completa"
+         }
+        },
+        {
+         value: "secundaria_incompleta",
+         text: {
+          es: "Secundaria Incompleta"
+         }
+        },
+        {
+         value: "tecnica",
+         text: {
+          es: "Técnica"
+         }
+        },
+        {
+         value: "tecnologica",
+         text: {
+          es: "Tecnológica"
+         }
+        },
+        {
+         value: "otros_estudios",
+         text: {
+          es: "Otros"
+         }
+        }
+       ]
+      },
+      {
+       type: "radiogroup",
+       name: "capacitacion_adicional",
+       title: {
+        es: "Desea capacitación adicional"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "si",
+         text: {
+          es: "Si"
+         }
+        },
+        {
+         value: "no",
+         text: {
+          es: "No"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "text",
+       name: "ocupacion_principal",
+       title: {
+        es: "Ocupación Principal"
+       },
+       isRequired: true,
+       placeHolder: {
+        es: "Escriba la ocupación principal del encuestado"
+       }
+      },
+      {
+       type: "radiogroup",
+       name: "tiempo_residencia",
+       title: {
+        es: "Tiempo de residencia de la US en el predio (en años)"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "tiempo_residencia1",
+         text: {
+          es: "Menos de 1"
+         }
+        },
+        {
+         value: "tiempo_residencia2",
+         text: {
+          es: "1 a 3"
+         }
+        },
+        {
+         value: "tiempo_residencia3",
+         text: {
+          es: "3 a 5"
+         }
+        },
+        {
+         value: "tiempo_residencia4",
+         text: {
+          es: "5 a 7"
+         }
+        },
+        {
+         value: "tiempo_residencia5",
+         text: {
+          es: "Mas de 7"
+         }
+        }
+       ],
+       colCount: 5
+      }
+     ]
+    },
+    {
+     type: "panel",
+     name: "info_cohesion_social",
+     elements: [
+      {
+       type: "html",
+       name: "informacion_cohesion_social",
+       html: {
+        es: "<p>Información Socio Económica y Cohesion Social</p>"
+       }
+      },
+      {
+       type: "text",
+       name: "total_integrantes",
+       title: {
+        es: "Total de Integrantes"
+       },
+       isRequired: true,
+       inputType: "number"
+      },
+      {
+       type: "radiogroup",
+       name: "pareja_conviviendo",
+       startWithNewLine: false,
+       title: {
+        es: "Pareja conviviendo"
+       },
+       isRequired: true,
+       choices: [
+        {
+         value: "si",
+         text: {
+          es: "Si"
+         }
+        },
+        {
+         value: "no",
+         text: {
+          es: "No"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "text",
+       name: "num_hijas",
+       startWithNewLine: false,
+       title: {
+        es: "N° de Hijas"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_hijos",
+       startWithNewLine: false,
+       title: {
+        es: "N° de Hijos"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "adultos_mayores",
+       title: {
+        es: "Adultos Mayores"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "personas_handicap",
+       startWithNewLine: false,
+       title: {
+        es: "Personas discapacitadas"
+       },
+       inputType: "number"
+      },
+      {
+       type: "radiogroup",
+       name: "ahorros_hogar",
+       startWithNewLine: false,
+       title: {
+        es: "El hogar tiene ahorros?"
+       },
+       choices: [
+        {
+         value: "si",
+         text: {
+          es: "Si"
+         }
+        },
+        {
+         value: "no",
+         text: {
+          es: "No"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "participac_organiz_comunitaria",
+       title: {
+        es: "Algun integrante de la US participa de organización comunitaria?"
+       },
+       choices: [
+        {
+         value: "si",
+         text: {
+          es: "Si"
+         }
+        },
+        {
+         value: "no",
+         text: {
+          es: "No"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "checkbox",
+       name: "integrante_servicios_adicionales",
+       title: {
+        es: "Algun integrante de la familia recibe cualquiera de los siguientes servicios?"
+       },
+       choices: [
+        {
+         value: "guarderia",
+         text: {
+          es: "Guarderia Infantil"
+         }
+        },
+        {
+         value: "restaurante",
+         text: {
+          es: "Restaurante Escolar"
+         }
+        },
+        {
+         value: "transporte",
+         text: {
+          es: "Transporte Escolar"
+         }
+        },
+        {
+         value: "educacion",
+         text: {
+          es: "Educacion Basica"
+         }
+        },
+        {
+         value: "rehabilit",
+         text: {
+          es: "Rehabilitacion"
+         }
+        },
+        {
+         value: "geriatrico",
+         text: {
+          es: "Apoyo geriatrico"
+         }
+        }
+       ]
+      },
+      {
+       type: "radiogroup",
+       name: "relacion_vecinos",
+       title: {
+        es: "Cómo es su relacion con los vecinos"
+       },
+       choices: [
+        {
+         value: "buena",
+         text: {
+          es: "Buena"
+         }
+        },
+        {
+         value: "regular",
+         text: {
+          es: "Regular"
+         }
+        },
+        {
+         value: "mala",
+         text: {
+          es: "Mala"
+         }
+        }
+       ],
+       colCount: 3
+      },
+      {
+       type: "radiogroup",
+       name: "familiares_vecindario",
+       title: {
+        es: "Tiene familiares en el vecindario?"
+       },
+       choices: [
+        {
+         value: "si",
+         text: {
+          es: "Si"
+         }
+        },
+        {
+         value: "no",
+         text: {
+          es: "No"
+         }
+        }
+       ],
+       colCount: 2
+      },
+      {
+       type: "radiogroup",
+       name: "gusto_hogar",
+       title: {
+        es: "Le gusta vivir en este lugar?"
+       },
+       choices: [
+        {
+         value: "si",
+         text: {
+          es: "Si"
+         }
+        },
+        {
+         value: "no",
+         text: {
+          es: "No"
+         }
+        }
+       ],
+       colCount: 2
+      }
+     ]
+    }
+   ],
+   title: {
+    es: "Información de la Unidad Social"
+   }
+  },
+  {
+   name: "anexo_2",
+   elements: [
+    {
+     type: "panel",
+     name: "anex2_datos_identificacion",
+     elements: [
+      {
+       type: "text",
+       name: "codigo_anexo2",
+       title: {
+        es: "Codigo N°"
+       },
+       isRequired: true,
+       inputType: "number",
+       placeHolder: {
+        es: "Digite el número del codigo"
+       }
+      },
+      {
+       type: "text",
+       name: "total_us_anexo2",
+       startWithNewLine: false,
+       title: {
+        es: "Total de US"
+       },
+       isRequired: true,
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "num_us_anexo2",
+       startWithNewLine: false,
+       title: {
+        es: "US N°"
+       },
+       inputType: "number"
+      },
+      {
+       type: "text",
+       name: "centro_poblado_anexo2",
+       title: {
+        es: "Nombre del centro poblado"
+       },
+       isRequired: true,
+       placeHolder: {
+        es: "Escriba el nombre del centro poblado"
+       }
+      },
+      {
+       type: "dropdown",
+       name: "municipio_anexo2",
+       startWithNewLine: false,
+       title: {
+        es: "Municipio"
+       },
+       isRequired: true,
+       choices: [
+        "item1",
+        "item2",
+        "item3"
+       ]
+      },
+      {
+       type: "text",
+       name: "direccion_predio_anexo2",
+       title: {
+        es: "Dirección del Predio"
+       },
+       isRequired: true,
+       placeHolder: {
+        es: "Escriba la dirección del predio"
+       }
+      },
+      {
+       type: "text",
+       name: "nombre_encuestador_anexo2",
+       title: {
+        es: "Nombre del Encuestador"
+       },
+       isRequired: true,
+       placeHolder: {
+        es: "Escriba el nombre del encuestador"
+       }
+      },
+      {
+       type: "text",
+       name: "fecha_encuesta_anexo2",
+       startWithNewLine: false,
+       title: {
+        es: "Fecha"
+       },
+       isRequired: true,
+       inputType: "date"
+      }
+     ],
+     title: {
+      es: "Datos de Identificación"
+     }
+    }
+   ],
+   title: {
+    es: "Ficha Social Unidad Social Residente (USR)"
+   }
+  }
+ ],
+ sendResultOnPageNext: true,
+ showProgressBar: "top"
+}

@@ -1,0 +1,17 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: 100%;
+    background-color: #badc58;
+    height: 200px;
+}
+
+
+#surveyContainer {
+    width: 85%;
+    margin: auto;
+    padding-top: 20px;
+}
